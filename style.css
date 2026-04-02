@@ -103,6 +103,45 @@ img {
   color: var(--color-text);
 }
 
+.dark-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.dark-toggle::before {
+  content: '';
+  position: absolute;
+  left: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.dark-toggle:hover {
+  color: var(--color-text);
+}
+
+.icon-sun {
+  display: none;
+}
+
+.dark-mode .icon-moon {
+  display: none;
+}
+
+.dark-mode .icon-sun {
+  display: block;
+}
+
 .nav-links a {
   font-size: 0.85rem;
   font-weight: 400;
@@ -572,6 +611,52 @@ img {
   font-size: 0.78rem;
   color: var(--color-text-muted);
   letter-spacing: 0.02em;
+}
+
+/* ===== Dark Mode ===== */
+.dark-mode {
+  --color-bg: #0f0f0f;
+  --color-surface: #1a1a1a;
+  --color-surface-warm: #1e1a16;
+  --color-text: #f0f0f0;
+  --color-text-muted: #999999;
+  --color-accent: #d9a0dd;
+  --color-accent-soft: #e8a0bf;
+  --color-accent-dark: #c9a0e0;
+}
+
+.dark-mode .nav {
+  background: rgba(15, 15, 15, 0.9);
+}
+
+.dark-mode .dark-toggle::before,
+.dark-mode .lang-toggle::before {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.dark-mode .tools {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+
+.dark-mode .btn-primary {
+  background: var(--color-text);
+  color: var(--color-bg);
+}
+
+.dark-mode .project-image-slot:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .photo-placeholder {
+  background: #333;
+}
+
+.dark-mode .about-stats {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark-mode .footer {
+  border-color: rgba(255, 255, 255, 0.06);
 }
 
 /* ===== Responsive ===== */

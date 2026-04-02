@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Studio — Design Portfolio</title>
+  <title>Studio.oz — Portfolio Design</title>
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,21 +15,22 @@
   <nav class="nav">
     <a href="#" class="nav-logo">Studio.oz</a>
     <ul class="nav-links">
-      <li><a href="#work">Work</a></li>
-      <li><a href="#about">About</a></li>
+      <li><a href="#projets">Projets</a></li>
+      <li><a href="#apropos">À propos</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Hero Section -->
   <header class="hero">
-    <p class="hero-label">Photoshop &amp; Illustrator Designer</p>
-    <h1 class="hero-title">Creating visuals that<br><em>captivate</em> &amp; communicate.</h1>
+    <p class="hero-label">Marketing &middot; Branding &middot; Design</p>
+    <h1 class="hero-title">Des visuels qui<br><em>captivent</em> &amp; communiquent.</h1>
     <p class="hero-description">
-      I craft refined brand identities, illustrations, and digital artwork
-      that help businesses stand out and connect with their audience.
+      Leader marketing strat&eacute;gique sp&eacute;cialis&eacute;e en branding,
+      d&eacute;veloppement de marque et conception d'emballages.
+      Cr&eacute;er des identit&eacute;s visuelles &agrave; fort impact commercial.
     </p>
-    <a href="#work" class="btn btn-primary">View My Work</a>
+    <a href="#projets" class="btn btn-primary">Voir mes projets</a>
     <div class="hero-decoration">
       <div class="hero-blob blob-1"></div>
       <div class="hero-blob blob-2"></div>
@@ -43,113 +44,123 @@
       <span class="tool-divider"></span>
       <span class="tool-badge">Adobe Illustrator</span>
       <span class="tool-divider"></span>
-      <span class="tool-badge">Brand Identity</span>
+      <span class="tool-badge">Branding</span>
       <span class="tool-divider"></span>
-      <span class="tool-badge">Illustration</span>
+      <span class="tool-badge">Packaging</span>
+      <span class="tool-divider"></span>
+      <span class="tool-badge">Strat&eacute;gie marketing</span>
     </div>
   </section>
 
-  <!-- Work Section -->
-  <section class="work" id="work">
+  <!-- Projects Section -->
+  <section class="work" id="projets">
     <div class="section-header">
       <p class="section-label">Portfolio</p>
-      <h2 class="section-title">Selected Work</h2>
+      <h2 class="section-title">Mes Projets</h2>
     </div>
-    <div class="work-grid">
-      <article class="work-card work-card--large">
-        <div class="work-card-image" style="background: linear-gradient(135deg, #fce4ec, #f3e5f5);">
-          <div class="placeholder-art">
-            <div class="art-circle" style="background: linear-gradient(135deg, #e8a0bf, #c48bc8);"></div>
-            <div class="art-rect" style="background: linear-gradient(135deg, #b39ddb, #80cbc4);"></div>
-          </div>
+
+    <!-- Project 1: Bleu et Bon (Featured) -->
+    <article class="project project--featured">
+      <div class="project-images">
+        <div class="project-image-slot project-image-slot--large" style="background: linear-gradient(135deg, #c8d6e5, #dfe6ed);">
+          <!-- Replace with: <img src="images/bleu-et-bon-cans.jpg" alt="Bleu et Bon - Redesign"> -->
+          <span class="image-placeholder">Image du projet</span>
         </div>
-        <div class="work-card-info">
-          <h3>Aurora Brand Identity</h3>
-          <p>Branding &middot; Illustration</p>
+        <div class="project-image-slot" style="background: linear-gradient(135deg, #f8c8d4, #f2d5dc);">
+          <!-- Replace with: <img src="images/bleu-et-bon-pink.jpg" alt="Bleu et Bon - Slogan"> -->
+          <span class="image-placeholder">Image du projet</span>
         </div>
-      </article>
-      <article class="work-card">
-        <div class="work-card-image" style="background: linear-gradient(135deg, #e8eaf6, #e0f2f1);">
-          <div class="placeholder-art">
-            <div class="art-triangle"></div>
-            <div class="art-dots"></div>
-          </div>
+      </div>
+      <div class="project-info">
+        <span class="project-number">01</span>
+        <h3 class="project-title">Bleu et Bon</h3>
+        <p class="project-category">Rebranding &middot; Packaging &middot; Slogan</p>
+        <p class="project-description">
+          Redesign des jus Bleu &amp; Bon. Conception des emballages.
+          Cr&eacute;ation de slogan. Design original sous l'ancien nom Zumo.
+        </p>
+      </div>
+    </article>
+
+    <!-- Project 2 & 3 Grid -->
+    <div class="project-grid">
+      <article class="project project--card">
+        <div class="project-image-slot" style="background: linear-gradient(135deg, #e8eaf6, #e0f2f1);">
+          <!-- Replace with: <img src="images/frescadel.jpg" alt="Frescadel"> -->
+          <span class="image-placeholder">Image du projet</span>
         </div>
-        <div class="work-card-info">
-          <h3>Geometric Series</h3>
-          <p>Digital Art &middot; Photoshop</p>
-        </div>
-      </article>
-      <article class="work-card">
-        <div class="work-card-image" style="background: linear-gradient(135deg, #fff3e0, #fce4ec);">
-          <div class="placeholder-art">
-            <div class="art-wave"></div>
-          </div>
-        </div>
-        <div class="work-card-info">
-          <h3>Wave Collection</h3>
-          <p>Illustration &middot; Packaging</p>
-        </div>
-      </article>
-      <article class="work-card">
-        <div class="work-card-image" style="background: linear-gradient(135deg, #f3e5f5, #e8eaf6);">
-          <div class="placeholder-art">
-            <div class="art-square"></div>
-            <div class="art-square"></div>
-          </div>
-        </div>
-        <div class="work-card-info">
-          <h3>Modular Posters</h3>
-          <p>Print Design &middot; Illustrator</p>
+        <div class="project-info">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Frescadel</h3>
+          <p class="project-category">Branding &middot; Design</p>
         </div>
       </article>
-      <article class="work-card">
-        <div class="work-card-image" style="background: linear-gradient(135deg, #e0f2f1, #e8eaf6);">
-          <div class="placeholder-art">
-            <div class="art-line"></div>
-            <div class="art-line"></div>
-            <div class="art-line"></div>
-          </div>
+
+      <article class="project project--card">
+        <div class="project-image-slot" style="background: linear-gradient(135deg, #fff3e0, #fce4ec);">
+          <!-- Replace with: <img src="images/canadawide-fruits.jpg" alt="Canadawide Fruits"> -->
+          <span class="image-placeholder">Image du projet</span>
         </div>
-        <div class="work-card-info">
-          <h3>Typography Explorations</h3>
-          <p>Type Design &middot; Branding</p>
+        <div class="project-info">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Canadawide Fruits</h3>
+          <p class="project-category">Branding &middot; Packaging</p>
         </div>
       </article>
     </div>
+
+    <!-- Project 4 -->
+    <article class="project project--wide">
+      <div class="project-image-slot" style="background: linear-gradient(135deg, #f3e5f5, #e8eaf6);">
+        <!-- Replace with: <img src="images/saveurs-du-monde.jpg" alt="Les saveurs du monde"> -->
+        <span class="image-placeholder">Image du projet</span>
+      </div>
+      <div class="project-info">
+        <span class="project-number">04</span>
+        <h3 class="project-title">Les saveurs du monde</h3>
+        <p class="project-category">Branding &middot; Design</p>
+      </div>
+    </article>
   </section>
 
   <!-- About Section -->
-  <section class="about" id="about">
+  <section class="about" id="apropos">
     <div class="about-inner">
-      <div class="section-header">
-        <p class="section-label">About</p>
-        <h2 class="section-title">A little about me</h2>
-      </div>
-      <div class="about-content">
+      <div class="about-text-col">
+        <p class="section-label">&Agrave; propos</p>
+        <h2 class="section-title">&Agrave; propos de moi</h2>
         <p class="about-text">
-          I'm a visual designer specializing in Adobe Photoshop and Illustrator with
-          over 8 years of experience creating compelling graphics, brand identities,
-          and illustrations. I believe great design is a balance of aesthetics and
-          purpose &mdash; every pixel and vector has intention.
+          Leader marketing strat&eacute;gique avec pr&egrave;s de 10 ans
+          d'exp&eacute;rience en marketing, communication et design.
+          Expertise reconnue en branding, d&eacute;veloppement de
+          marque, strat&eacute;gies d'acquisition, gestion d'&eacute;quipes et mise
+          en march&eacute; dans des environnements B2B et B2C.
         </p>
         <p class="about-text">
-          From photo manipulation and retouching in Photoshop to scalable vector
-          artwork in Illustrator, I bring ideas to life across print and digital media.
+          Habitu&eacute;e &agrave; collaborer avec de grandes banni&egrave;res nationales et &agrave;
+          piloter des projets &agrave; fort impact commercial.
         </p>
       </div>
+      <div class="about-photo">
+        <!-- Replace with: <img src="images/portrait.jpg" alt="Portrait"> -->
+        <div class="photo-placeholder">
+          <span>Photo portrait</span>
+        </div>
+      </div>
+    </div>
+    <div class="about-stats-wrap">
       <div class="about-stats">
         <div class="stat">
-          <span class="stat-number">50+</span>
-          <span class="stat-label">Projects Completed</span>
+          <span class="stat-number">10</span>
+          <span class="stat-label">Ann&eacute;es d'exp&eacute;rience</span>
         </div>
         <div class="stat">
-          <span class="stat-number">30+</span>
-          <span class="stat-label">Happy Clients</span>
+          <span class="stat-number">4</span>
+          <span class="stat-label">Projets majeurs</span>
         </div>
         <div class="stat">
-          <span class="stat-number">8</span>
-          <span class="stat-label">Years Experience</span>
+          <span class="stat-number">B2B</span>
+          <span class="stat-label">&amp; B2C</span>
         </div>
       </div>
     </div>
@@ -157,9 +168,12 @@
 
   <!-- Contact Section -->
   <section class="contact" id="contact">
-    <p class="section-label">Get in touch</p>
-    <h2 class="section-title">Let's create something<br><em>beautiful</em> together.</h2>
-    <a href="mailto:hello@yourstudio.com" class="btn btn-primary btn-large">Say Hello</a>
+    <p class="section-label">Contact</p>
+    <h2 class="section-title">Travaillons<br><em>ensemble.</em></h2>
+    <p class="contact-text">
+      Un projet en t&ecirc;te ? J'aimerais en discuter avec vous.
+    </p>
+    <a href="mailto:hello@studio-oz.com" class="btn btn-primary btn-large">Dire bonjour</a>
     <div class="social-links">
       <a href="#">Behance</a>
       <a href="#">Dribbble</a>
@@ -170,7 +184,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>&copy; 2026 Studio. Crafted with care.</p>
+    <p>&copy; 2026 Studio.oz &mdash; Tous droits r&eacute;serv&eacute;s.</p>
   </footer>
 
 </body>

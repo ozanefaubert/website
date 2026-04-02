@@ -369,7 +369,7 @@ img {
   margin-bottom: 1.5rem;
 }
 
-.project--featured .project-image-slot {
+.project--featured .project-images .project-image-slot {
   aspect-ratio: 4 / 3;
 }
 
@@ -383,12 +383,14 @@ img {
 
 .project-image-slot--banner {
   width: 100%;
+  display: block;
 }
 
 .project-image-slot--banner img {
   width: 100%;
   height: auto;
   object-fit: contain;
+  display: block;
 }
 
 .project--featured .project-info {

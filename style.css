@@ -383,14 +383,13 @@ img {
 
 .project-image-slot--banner {
   width: 100%;
-  display: block;
+  aspect-ratio: 16 / 9;
 }
 
 .project-image-slot--banner img {
   width: 100%;
-  height: auto;
-  object-fit: contain;
-  display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .project--featured .project-info {

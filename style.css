@@ -65,7 +65,7 @@ img {
 .nav-right {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .nav-links {
@@ -76,21 +76,31 @@ img {
 
 .lang-toggle {
   font-family: var(--font-sans);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  color: var(--color-text);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
   background: none;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 100px;
-  padding: 0.4rem 0.9rem;
+  border: none;
+  padding: 0;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.lang-toggle::before {
+  content: '';
+  position: absolute;
+  left: -1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .lang-toggle:hover {
-  border-color: var(--color-accent-dark);
-  color: var(--color-accent-dark);
+  color: var(--color-text);
 }
 
 .nav-links a {

@@ -671,6 +671,7 @@ img {
     order: 3;
     width: 100%;
     gap: 1.25rem;
+    justify-content: center;
   }
 
   .nav-links {
